@@ -1,5 +1,5 @@
 // includes -> returns boolean value
-const arr = [2, 4, 6, 6, 7, 90, 34];
+const arr = [2, 4, 6, "hi", 7, 90, 34];
 
 //check if an variable holds an array or isArray or not, returns a boolean value
 //console.log(Array.isArray(arr));
@@ -27,8 +27,21 @@ const arr = [2, 4, 6, 6, 7, 90, 34];
 //slice(start_index) - slices an array from the given starting index, and returns all the remaining elements after that start_index
 //console.log(arr.slice(3));
 
-console.log(arr.slice(-2));
+// console.log(arr.slice(-2));
 
 //Slice(-1) will return the last element of the array
 //Slice(-2) will return last two element of the array
 //slice(-3,-1) will return element from index -3 to -2
+
+//Slice
+// returns an array of spliced elements, orignal array get modified;
+// after deleting the elements, we can add more elements to the array from the same position that we have removed them
+// console.log("=== SPLICE ====", arr.splice(2, 2, "hello", "world", 100, true));
+// console.log("=== ORIGINAL ARRAY ===", arr);
+
+const arr2 = [2, 7, 4, 2, 0, 245];
+// concat
+//console.log(arr.concat(arr2, [true, false]));
+
+// toString()
+console.log(arr.toString());
