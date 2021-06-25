@@ -36,7 +36,7 @@ const arr = [2, 4, 6, "hi", 7, 90, 34];
 //Slice
 // returns an array of spliced elements, orignal array get modified;
 // after deleting the elements, we can add more elements to the array from the same position that we have removed them
-// console.log("=== SPLICE ====", arr.splice(2, 2, "hello", "world", 100, true));
+console.log("=== SPLICE ====", arr.splice(2, 2, "hello", "world", 100, true));
 // console.log("=== ORIGINAL ARRAY ===", arr);
 
 const arr2 = [2, 7, 4, 2, 0, 245];
