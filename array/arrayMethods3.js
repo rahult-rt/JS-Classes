@@ -27,3 +27,9 @@ const result = newStr.reduce((acc, currentValue) => {
   return acc;
 }, []);
 console.log(result);
+
+//findIndex()
+const strArr = ["hi", "hello", "bye", "bravo", "riddle"];
+
+const index = strArr.findIndex((currentValue) => currentValue === "Hi");
+console.log(index);
