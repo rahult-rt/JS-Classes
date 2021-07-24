@@ -79,8 +79,6 @@ const car = {
 
 //Object.freeze()
 //this property won't allow to change or add property.
-
-
 Object.freeze(car)
 
 car["price"] = 25000 //adding property
