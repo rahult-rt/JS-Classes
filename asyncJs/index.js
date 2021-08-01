@@ -19,10 +19,41 @@
 
 // console.log(square2);
 
-console.log("Test 1");
-console.log("Test 2");
 
-setTimeout(()=>{
-console.log("Inside Time");
-},4000)
-console.log("Test 3");
+// setTimeout(() => {
+//   console.log("Inside First Timeout");
+//   setTimeout(() => {
+//     console.log("Iside Second Timeout");
+//     setTimeout(() => {
+//       console.log("inside third timeout");
+//     }, 2000);
+//   }, 3000);
+// }, 4000);
+// console.log("Test 3");
+
+const newFunc = (num) => {
+  const verify = new Promise((resolve, reject) => {
+    if (num % 2 === 0) resolve(`${num} is even.`);
+    else reject(`${num} is odd.`);
+  });
+  return verify;
+};
+
+
+
+newFunc(10)
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+
+  setTimeout(()=>{
+    console.log("Testing 3");
+  },3000)
+  
+console.log(" Testing 1");
+console.log("Testing 2");
+
+console.log("Testing 4");
